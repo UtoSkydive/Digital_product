@@ -1,0 +1,270 @@
+/*------------------------------
+variables
+.............................*/
+:root{
+    --gren-color: #7ACC2D;
+    --white-color:white;
+    --black-color:black;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html,body{
+    margin: 0;
+    padding:0;
+    font-size:12px;
+    font-family: 'Muli', sans-serif;
+}
+nav{
+    display: flex;
+    background:var(--gren-color);
+    padding:10px;
+    color:var(--black-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+    
+}
+nav li a{
+    color:var(--black-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.brand-image img{
+width: 80px;
+margin-left: 20px;
+}
+nav li a:hover{
+color:var(--white-color);
+border-bottom: 1px solid white;
+}
+
+/* Main section */
+
+.main-section{
+/* padding:15%; */
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+
+
+}
+.main-section__title{
+    padding:40px;
+    text-align: center;
+    /* border:1px solid red; */
+}
+
+.products{
+    /* background-image: url("../images/trazo.png"); */
+    /* background-repeat: no-repeat; */
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    background:#F6EAEA;
+    height: 250px;
+    width: 100%;
+    /* background-size: cover; */
+    /* background-position-x: 0%; */
+    /* padding:20px; */
+    display:flex;
+    justify-content: center;
+    /* padding: 15%; */
+    
+    margin-top:6em;
+    position: relative;
+  
+  
+ 
+    
+   
+}
+.product{
+    padding:8px;
+    width: 200px;
+    height: 200px;
+    
+    margin:10px;
+    /* border: 1px solid yellow; */
+    
+   
+    
+    
+}
+.products__content--product{
+display:flex;
+position: absolute;
+bottom: 80px;
+/* border: 1px solid red; */
+}
+
+.product .content{
+    background: var(--white-color);
+    padding:15px;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1px #c1bcbc;
+}
+.product .content img{
+    width: 50px;
+    height: 60px;
+}
+
+.main-button{
+    background:var(--gren-color);
+    width: 100%;
+    padding: 10px;
+    color:var(--white-color);
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 5px;
+   
+}
+
+.main-button:hover{
+    background: #5e9e22;
+  
+}
+
+/* section detalles  */
+
+.details{
+    width:100%;
+    height: 300px;
+    /* background:red; */
+    margin-top:40px;
+    display:flex;
+    /* flex-direction: column; */
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.details .box{
+    /* background: yellow; */
+    width:200px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.box img{
+    width:100px;
+    height: 80px;
+}
+.box p{
+    text-align: justify;
+    font-weight: 100;
+}
+.box h1{
+    font-weight:900;
+    
+}
+
+/* section meniones */
+
+.menciones{
+    width: 100%;
+    height: 30vh;
+    /* background:blue; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+.menciones__container{
+    width:90%;
+    height: 200px;
+    /* background: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menciones__container .box{
+    width: 200px;
+    height: 150px;
+    background:red;
+    margin-left:10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.menciones__container .box:nth-child(1){
+    background-image: url(/images/1.jpeg);
+    background-origin: border-box;
+    background-size: cover;
+    background-position-y: 50%;
+    position:relative;
+}
+.menciones__container .box:nth-child(2){
+    background-image: url(/images/2.jpeg);
+    background-origin: border-box;
+    background-size: cover;
+    background-position-y: 50%;
+    position:relative;
+}
+.menciones__container .box:nth-child(3){
+    background-image: url(/images/3.jpeg);
+    background-origin: border-box;
+    background-size: cover;
+    background-position-y: 50%;
+    position:relative;
+}
+.menciones__container .box:nth-child(4){
+    background-image: url(/images/4.jpeg);
+    background-origin: border-box;
+    background-size: cover;
+    background-position-y: 50%;
+    position:relative;
+}
+.menciones__container span{
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    background:rgba(0,0,0, 0.3);
+    color:white;
+    position: absolute;
+    top:70px;
+    text-align: center;
+}
+.menciones__container span p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size:.9em;
+    
+    
+}
+
+.menciones h1{
+    font-size: 20px;
+    font-weight: 900;
+    border-bottom: 2px dotted gray;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: gray;
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+
+.footer p{
+    font-size: 16px
+}
